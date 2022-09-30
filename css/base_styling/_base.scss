@@ -1,0 +1,150 @@
+@import "../colors";
+@import "base_home";
+@import "base_main";
+@import "base_footer";
+@import "base_menu";
+@import "base_booking";
+@import "base_cookies";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $navy;
+    color: $beige;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+.wave{
+    height: fit-content;
+}
+
+h3{
+    color: $havet;    
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;    
+    color: $navy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;    
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    padding: 2px;
+
+    &:hover{
+        padding-top: 4px;
+    }
+
+    &:hover:after{        
+        content: '';
+        height: 2px;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $navy;        
+        display: block;        
+        position: relative;
+        bottom: -3px;      
+    }
+}
+
+label{
+    padding-bottom: 5px;
+}
+
+.booking-img-and-quote-container{
+    display: none;
+}
+
+.primary-button{
+    background-color: $beige;
+
+    &:active{
+        background-color: #B9A38B;
+    }
+}
+
+.secondary-button{
+    background-color: $white;
+
+    &:active{
+        background-color: #D0DFEC;
+    }
+}
+
+.menu-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: $white;
+    color: $navy;
+    z-index: 30;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;   
+    box-shadow: 0px 4px 4px #D9BFA3; 
+    cursor: pointer;
+    
+
+    &:hover>svg{
+        transition: 500ms;
+        path{
+            d: path("M0 5 C0 5 0 5 40 5");
+            transition: 500ms;
+        }
+    }    
+
+    &:not(:hover)>svg{
+        
+        path{
+            transition: 500ms;
+        }
+    }    
+}
+
+.menu-button.menu-open{
+    position: fixed;
+    
+    svg{
+        path{
+            d: path("M0 5 C0 5 0 5 40 5");
+        }  
+
+    }
+
+    #l2{
+        transition: 500ms;
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    #l1{
+        transition: 500ms;
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    #l3{
+        transition: 500ms;
+        transform: rotate(45deg) translate(-8px, -6px);
+    }
+}
+
+a{
+    cursor: pointer;
+}

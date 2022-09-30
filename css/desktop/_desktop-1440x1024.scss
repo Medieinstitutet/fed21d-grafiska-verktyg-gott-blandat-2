@@ -1,0 +1,119 @@
+@use "../colors";
+
+.home-main{    
+    height: 100vh;
+    background-position: bottom;
+}
+
+.welcome-text-container{
+    height: 31vh;
+    width: 70vw;
+    padding: 35px;  
+    top: 22%;
+
+    h1{
+        font-size: 72px;
+        line-height: 85px;
+        text-align: center;
+    }
+
+    p{
+        display: inline-block;
+    }
+}
+
+.more-about-us {
+    width: fit-content;    
+    text-align: center;    
+    font-size: 72px;
+    left: 29vw;
+    bottom: 11vh;
+}
+
+.main-main{
+    padding: 30px 200px 50px 200px;
+
+    .main-text-container{
+        article{
+            width: 85%;
+        }
+    }
+}
+
+blockquote{
+    width: 15vw;      
+}
+
+.main-img-and-quote-container{
+    position: relative;    
+    bottom: 25px;
+}
+
+.footer{    
+    height: 220px; 
+    gap: 25%;  
+}
+
+.menu{
+    width: 34vw;
+    right: 0; 
+}
+
+.menu nav ul {
+    gap: 10%; 
+    justify-content: flex-start;
+    margin-top: 25%;      
+}
+
+.booking{   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;    
+    height: 75vh;   
+    box-shadow: 0px 4px 4px #D9BFA3;
+
+
+    .booking-content-container{
+
+        .logo{
+            display: none;
+        }
+
+        h2{
+            position: absolute;
+            left: 18.5vw;
+            top: 9vh;           
+        }
+
+        form{
+            input{
+                width: 375px;
+            }
+        }
+
+        .booking-buttons-container{
+            width: 18vw;
+        }
+    }
+}
+
+
+
+
+.banner{
+    padding-left: 70px;
+    padding-right: 50px;
+
+    p{
+        margin-bottom: 40px;
+    }
+
+    .cookies-buttons-container{     
+        flex-flow: row;
+        width: 25vw;
+        right: 0;
+        align-items: center;
+    }
+}
