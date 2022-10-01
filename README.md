@@ -2,8 +2,8 @@
 # FED21D Grafiska Verktyg 🎨
 Mall-repo för kursen `Grafiska Verktyg`
 
-<h2>Rebecka Larsson</h2>
-<h3>Om designen: </h3>
+
+<h3>Rebecka Larsson Om designen: </h3>
 
 <p>Jag valde att skapa ett svenskt hotel i Karibien då jag snart ska på semester dit och hittade min inspiration där. 
 När jag tänker på Karibien så tänker jag på hav, klar himmer och sandstränder vilket fick mig att välja färgerna som jag valt. </p>
