@@ -624,6 +624,46 @@ a {
             transform: translateX(-50%);
     display: block;
     z-index: 60;
+    -webkit-animation-name: button-slide-in;
+            animation-name: button-slide-in;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  @-webkit-keyframes button-slide-in {
+    0% {
+      left: 110%;
+      opacity: 0;
+    }
+    50% {
+      left: 110%;
+      opacity: 0;
+    }
+    80% {
+      left: 45%;
+      opacity: 100%;
+    }
+    100% {
+      left: 50%;
+    }
+  }
+  @keyframes button-slide-in {
+    0% {
+      left: 110%;
+      opacity: 0;
+    }
+    50% {
+      left: 110%;
+      opacity: 0;
+    }
+    80% {
+      left: 45%;
+      opacity: 100%;
+    }
+    100% {
+      left: 50%;
+    }
   }
   .logo {
     top: 20px;
