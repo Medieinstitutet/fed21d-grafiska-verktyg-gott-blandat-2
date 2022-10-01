@@ -1,0 +1,56 @@
+.home-main{    
+    height: 100vh; 
+}
+
+.wave {
+    bottom: 0;
+}
+
+.welcome-text-container{
+    width: 343px;
+    height: 122px;
+    top: 20%;
+}
+
+.more-about-us {
+    width: fit-content;    
+    left: 20px;
+    bottom: 0;
+}
+
+.beach-walk{
+    height: 219px;
+    width: 264px;
+}
+
+h2{
+    margin-top: 0;
+}
+
+.footer{
+    flex-flow: row; 
+    height: 297px;   
+}
+
+.menu nav ul {
+    gap: 10%;    
+}
+
+.booking{   
+    position: absolute;    
+    height: 100vw;     
+}
+
+.banner{
+    padding-top: 20px;
+
+    .cookies-buttons-container{
+        width: 48vw;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 15px;
+        right: 75px;
+    }
+}
+

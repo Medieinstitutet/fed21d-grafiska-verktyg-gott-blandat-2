@@ -1,0 +1,21 @@
+@import "base_styling/base";
+
+@media screen and (min-width: 376px) {
+    
+    @import "mobile/mobile-horisontal";
+}
+
+@media screen and (min-width: 744px) {
+    
+    @import "tablet/tablet-vertical";
+}
+
+@media screen and (min-width: 1133px) {
+    
+    @import "tablet/tablet-horizontal";
+}
+
+@media screen and (min-width: 1440px) {
+    
+    @import "desktop/desktop-1440x1024";
+}

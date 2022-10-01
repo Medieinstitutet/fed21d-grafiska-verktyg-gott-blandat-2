@@ -1,0 +1,66 @@
+@use "../colors";
+
+.booking{
+    position: fixed;    
+    top: 0;
+    z-index: 80;
+    width: 100vw;
+    height: 100vh;
+    background-color: $navy;
+    color: $white;
+    border: 4px solid #D9BFA3;
+    padding: 30px 0 30px 0;
+
+    .booking-content-container{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo{
+            display: none;
+        }
+
+        h2{
+            margin-top: 0;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 43px;
+            padding: 0;
+        }
+
+        form{
+
+            label{
+                color: $havet;                
+                display: inline-block;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        
+            input{
+                border: 5px solid $havet;
+                margin-bottom: 30px;
+                width: 85vw;
+                height: 41px;
+
+                &::placeholder{                    
+                    font-weight: 500;
+                    font-size: 16px;                                     
+                    color: $navy;
+                }
+            }
+        }
+
+        .booking-buttons-container{
+            width: 85vw;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+

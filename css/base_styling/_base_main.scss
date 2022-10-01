@@ -1,0 +1,74 @@
+@use "../colors";
+
+.main-main{
+    height: fit-content;
+    padding: 20px;
+    margin-top: 30px;
+    color: $white;
+
+    article{
+
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    a{
+        display: inline-block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;        
+        color: $beige;
+        margin: 20px 0 20px 0;
+        height: 20px;
+
+
+        &:hover:after{
+            content: '';
+            height: 3px;
+            width: 100%;
+            background: $beige;
+            display: inline-block;
+            position: relative;
+            bottom: 10px;            
+        }
+    }
+}
+
+h2, h3{
+    padding: 20px 0 20px 0;
+}
+
+h2{
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.beach-walk{
+    display: block;
+    width: 208px;
+    height: 219px; 
+    border-radius: 50%; 
+    border: 1px solid #E9F0F6;
+    filter: drop-shadow(0px 4px 4px #D9BFA3); 
+    margin: 20px auto 20px auto;
+}
+
+blockquote{
+    position: relative;
+    width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
